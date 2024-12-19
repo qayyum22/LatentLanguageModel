@@ -1,0 +1,38 @@
+latent_reasoning_project/
+├── data/
+│   ├── raw/                # Raw datasets (e.g., GSM8k, ProsQA, ProntoQA)
+│   ├── processed/          # Processed datasets ready for training
+│   └── loaders.py          # Scripts for loading and preprocessing data
+├── models/
+│   ├── __init__.py         # Init file for model package
+│   ├── latent_language_model.py  # Implementation of LatentLanguageModel
+│   └── utils.py            # Helper functions (e.g., value function, embeddings visualization)
+├── training/
+│   ├── curriculum.py       # Multi-stage curriculum training logic
+│   ├── train.py            # Training pipeline entry point
+│   └── optimizers.py       # Optimizer configurations
+├── inference/
+│   ├── infer.py            # Inference and evaluation logic
+│   ├── tree_search.py      # Tree search and BFS logic for latent reasoning
+│   └── metrics.py          # Evaluation metrics for reasoning paths
+├── experiments/
+│   ├── configs/            # Configuration files for experiments
+│   ├── run_experiment.py   # Script to run experiments
+│   └── logs/               # Training and evaluation logs
+├── tests/
+│   ├── test_model.py       # Unit tests for LatentLanguageModel
+│   ├── test_training.py    # Unit tests for training pipeline
+│   ├── test_inference.py   # Unit tests for inference logic
+│   └── test_utils.py       # Unit tests for utility functions
+├── scripts/
+│   ├── preprocess_data.py  # Script for preprocessing raw data
+│   ├── visualize.py        # Visualization tools for embeddings and reasoning paths
+│   └── export_model.py     # Model export and deployment
+├── notebooks/
+│   ├── data_exploration.ipynb # Jupyter notebooks for exploring datasets
+│   ├── model_debug.ipynb   # Debugging and visualizing model behavior
+│   └── experiment_analysis.ipynb # Analyzing experimental results
+├── requirements.txt        # Python dependencies
+├── README.md               # Project overview and instructions
+├── setup.py                # Setup script for the package
+└── .gitignore              # Files and directories to ignore in git
